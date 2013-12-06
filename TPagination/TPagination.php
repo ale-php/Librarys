@@ -46,14 +46,13 @@ public function creat_liks(){
 
 	echo $tagOpen;
 
-
-
-  <li><a href='#'>&laquo;</a></li>";
-
-  <li><a href="#">1</a></li>
- 
- echo "<li><a href=''>&raquo;</a></li>
-</ul>";
+foreach ($this->inten as $iten) {
+	$i = 1;
+	if(empty($this->itenOpen)){
+		$this->itenOpen = "<li> <a href='".$this->urlBase.'/'.$iten[$this->key]."'>$i";
+	}
+echo $itenOpen
+}
 
 }
 
